@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+#logo,
+h1,
+h2 {
+  font-family: "Cormorant Garamond", serif;
+}
+nav{
+  
+  display: flex;
+}
+#nav_one{
+  display: flex;
+  flex-basis: 20%;
+  padding: 10px;
+  justify-content: center;
+
+
+}
+#nav_two{
+  display: flex;
+  flex-basis: 60%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+a{
+  text-decoration: none;
+}
+#nav_two>a::after{
+  content: "";
+  position: absolute;
+  border: 0;
+  left: 0;
+  width: 0px;
+  border-bottom: 2px solid red;
+  transition: width 0.5s;
+}
+
+#nav_two>a:hover::after{
+  width: 100px;
+}
+
+#nav_three{
+  display: flex;
+  flex-basis: 20%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+#nav_three>i{
+  font-size: 30px;
+}
+
+#cart{
+position: relative;
+height: 20px;
+background-color: white;
+border: none;
+
+}
+
+#cart_quantity{
+  position: absolute;
+  font-size: 13px;
+  height: 16px;
+  width: 16px;
+  right: 170px;
+ top: 9px;
+ background-color: black;
+ color: white;
+ display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50px;
+font-weight: 600;
+}
+
+#cart_price{
+  font-size: 20px;
+  font-weight: 600;
+}
+#slider_container{
+padding: 0px 25px;
+ 
+  position: relative;
+}
+#slider_container>img{
+ height: 750px;
+  width: 100%;
+  object-fit: cover;
+  
+}
+#left_arrow{
+  position:absolute;
+  background-color: white;
+  top: 350px;
+  left: 50px;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+
+}
+#right_arrow{
+  position:absolute;
+  background-color: white;
+  right: 50px;
+  top: 350px;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+}
+.non-voice{
+  display: none;
+}
+.card>img{
+  height: 350px;
+  width: 250px;
+}
+
+ /*#DAY 2 */
+#second_page{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid black;
+}
+.card{
+position: relative;
+ overflow: hidden;
+
+}
+.card >img{
+  height: 400px;
+
+}
+.layer{
+
+  height: 44vh;
+  display: flex;
+  flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+position: absolute;
+ gap: 150px;
+bottom: -400px;
+ width: 100%;
+
+
+
+}
+
+.card:hover>.layer{
+
+  bottom: 5px;
+}
+.layer>button{
+  background-color: rgb(138, 82, 227);
+  color: white;
+  font-size: 22px;
+  border-radius: 15px;
+  border: none;
+}
+.layer>p{
+font-size: 25px;
+background-color: #6c757d86;
+color: white;
+width: 100%;
+text-align: center;
+
+}
+
+/*#DAY 3 */
+#third_page{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#third_page>img{
+  height: 100%;
+  width: 72%;
+  object-fit: cover;
+}
+
+#third_page_layer{
+  position:absolute;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.156);
+  color: white;
+  flex-direction: column;
+  gap: 20px;
+  height: 0%;
+  width: 0%;
+  transition: all 0.5s 0s ease;
+
+
+}
+#third_page_layer>h1{
+  font-size: 0px;
+  text-shadow: 2px 2px 5px black;
+  transition:all 0.5s 0s ease;
+}
+#third_page_layer>p{
+  font-size: 0px;
+  transition:all 0.5s 0s ease ;
+}
+
+#third_page>img:hover+#third_page_layer,#third_page_layer:hover{
+  height: 100%;
+  width: 72%;
+  opacity:1;
+}
+#third_page_layer:hover>h1{
+  font-size: 60px;
+}
+#third_page_layer:hover>p{
+  font-size: 20px;
+}
+
+/*#DAY 4 */
+#fourth_page{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: #efefef;
+
+}
+#info_container{
+  flex-basis: 85%;
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+#info1,
+#info2,
+#info3,
+#info4{
+  height: 100%;
+  flex-basis: 25%;
+}
+#info1,
+#info2,
+#info3{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+padding: 0px 10px;
+}
+#info1 > h1,
+#info2 > h1,
+#info3 > h1,
+#info4 > h1
+#info4_subscribe > h1{
+  font-size: 50px;
+  text-align: center;
+}
+#info1 > h3{
+  font-weight: 400;
+}
+#info1>p{
+  text-align: center;
+  font-size: 15px;
+}
+#info2,
+#info3{
+  gap: 30px;
+
+}
+ul{
+  width: 100%;
+  padding-left: 80px;
+}
+ul > li{
+  font-size: 20px;
+}
+#info4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#input_container{
+  width: 100%;
+}
+#input_container>input{
+  height: 40px;
+  width: 200px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.647);
+}
+  #input_container>button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: white;
+  }
+  #icon_container{
+   
+    width: 100px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   padding: 15px 0px;
+   gap: 20px;
+  }
+  .icon{
+    font-size: 25px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+  }
+  footer{
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solod rgba(0, 0, 0, 0.201);
+    font-size: 22px;
+  }

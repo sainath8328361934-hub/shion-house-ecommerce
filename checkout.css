@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+background-color: #efefee;
+
+}
+h1,
+h2 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+
+
+#checkout_container{
+  display: flex;
+
+  height: 80vh;
+  width: 60vw;
+  flex-direction: column;
+ background-color: white;
+ 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+#checkout1{
+  border-bottom: 3px solid rgba(0, 0, 0, 0.085);
+font-size: 20px;
+display: flex;
+
+padding-left: 20px;
+
+align-items: center;
+
+}
+#checkout2{
+  display: flex;
+  flex-basis: 80%;
+  overflow: auto;
+}
+#checkout3{
+ border-top: 3px solid rgba(0, 0, 0, 0.085);;
+  display: flex;
+  flex-basis: 10%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+
+  
+}
+#buyBtn {
+  font-size: 20px;
+  background-color: royalblue;
+  color: white;
+  border-radius: 8px;
+margin: 0px 10px;
+}
+.product_container{
+display: flex;
+padding: 10px;
+margin: 20px;
+border: radius 20px;
+}
+.product_container1{
+flex-basis: 15%;
+}
+.product_container2{
+flex-basis:85%;
+}
+
+
